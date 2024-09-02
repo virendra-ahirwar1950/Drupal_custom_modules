@@ -1,0 +1,15 @@
+custom_page.new_page:
+  path: '/custom_page'
+  defaults:
+    _controller: '\Drupal\custom_page\Controller\TheCustomPage::new_page'
+    _title: 'Custom Page'
+  requirements:
+    _permission: 'access content'
+
+custom_page.new_form:
+  path: '/new_form'
+  defaults:
+    _title: 'Student Registration Form'
+    _form: '\Drupal\custom_page\Form\NewCustomForm'
+  requirements:
+    _permission: 'access content'

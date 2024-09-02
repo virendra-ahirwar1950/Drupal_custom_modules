@@ -1,0 +1,7 @@
+custom_service.form_service:
+  path: '/custom_service'
+  defaults:
+    _form: '\Drupal\custom_service\Form\CustomForm'
+    _title: 'Custom services'
+  requirements:
+    _permission: 'access content'

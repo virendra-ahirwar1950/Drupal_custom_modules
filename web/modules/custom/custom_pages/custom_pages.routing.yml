@@ -1,0 +1,15 @@
+custom_pages.new_pages:
+  path: '/custom_pages'
+  defaults:
+    _controller: '\Drupal\custom_pages\Controller\TheCustomPages::new_pages'
+    _title: 'Custom Pages'
+  requirements:
+    _permission: 'access content'
+
+custom_page.new_form:
+  path: '/search_form'
+  defaults:
+    _title: 'Search titles'
+    _form: '\Drupal\custom_pages\Form\NewCustomForms'
+  requirements:
+    _permission: 'access content'

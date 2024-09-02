@@ -1,0 +1,4 @@
+custom_form_styles:
+  css:
+    theme:
+      css/custom_form_styles.css: { }

@@ -1,0 +1,11 @@
+<?php
+function custom_block_theme() {
+  return [
+    'custom_block' => [
+      'variables' => [
+        'custom_data' => [],
+        'custom_string' => '',
+      ],
+    ],
+  ];
+}

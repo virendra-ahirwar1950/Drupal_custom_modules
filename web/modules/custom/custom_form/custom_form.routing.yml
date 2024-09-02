@@ -1,0 +1,7 @@
+custom_form.form:
+  path: '/custom-form'
+  defaults:
+    _title: 'Custom Form'
+    _form: '\Drupal\custom_form\Form\CustomForm'
+  requirements:
+    _permission: 'access content'

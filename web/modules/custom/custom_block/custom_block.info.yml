@@ -1,0 +1,9 @@
+name: Custom Block
+description: "This module describes the Layout of website"
+type: module
+core_version_requirement: ^10
+version: 1.0.0
+package: Block
+dependencies:
+  - drupal:block
+

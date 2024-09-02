@@ -1,0 +1,8 @@
+name: 'Custom search autocomplete'
+type: module
+description: 'Provides a custom search form with AJAX autocomplete.'
+core_version_requirement: ^9 || ^10
+package: Custom
+
+dependencies:
+  - drupal:core

@@ -1,0 +1,8 @@
+name: 'Custom service'
+description: 'It provides services of custom code'
+type: module
+core_version_requirement: ^9 | ^10
+package: Service Module
+version: 1.0.0
+dependencies:
+  - drupal:node

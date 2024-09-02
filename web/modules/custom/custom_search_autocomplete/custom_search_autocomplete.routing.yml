@@ -1,0 +1,15 @@
+custom_search_autocomplete.autocomplete:
+  path: '/custom-search-autocomplete'
+  defaults:
+    _controller: '\Drupal\custom_search_autocomplete\Controller\CustomSearchAutocompleteController::autocomplete'
+  requirements:
+    _access: 'TRUE'
+
+
+custom_search_autocomplete.new_form:
+  path: '/custom-search-autocomplet'
+  defaults:
+    _title: 'Student Registration Form'
+    _form: '\Drupal\custom_page\Form\CustomSearch'
+  requirements:
+    _permission: 'access content'

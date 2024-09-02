@@ -1,0 +1,8 @@
+name: The Custom pages.
+description: 'This module describes about custom pages.'
+type: module
+core_version_requirement: ^9 || ^10
+package: Custom Module
+version: 2.0.0
+dependencies:
+  - drupal:node

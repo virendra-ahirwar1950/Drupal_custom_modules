@@ -1,0 +1,38 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+use Symfony\Component\HttpFoundation\JsonResponse;
+
+/**
+ * Implements hook_form_alter().
+ */
+function custom_search_autocomplete_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  // Targeting a specific form to add autocomplete functionality.
+  if ($form_id == 'your_custom_form_id') {
+    $form['search_term'] = [
+      '#type' => 'textfield',
+      '#title' => t('Search'),
+      '#autocomplete_route_name' => 'custom_search_autocomplete.autocomplete',
+      '#required' => TRUE,
+    ];
+  }
+}
+
+/**
+ * Defines autocomplete route.
+ */
+function custom_search_autocomplete_routes() {
+  $routes = [];
+
+  $routes['custom_search_autocomplete.autocomplete'] = [
+    'path' => '/custom-search-autocomplete',
+    'defaults' => [
+      '_controller' => '\Drupal\custom_search_autocomplete\Controller\CustomSearchAutocompleteController::autocomplete',
+    ],
+    'requirements' => [
+      '_access' => 'TRUE',
+    ],
+  ];
+
+  return $routes;
+}

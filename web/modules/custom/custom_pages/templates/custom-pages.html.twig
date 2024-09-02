@@ -1,0 +1,9 @@
+<div class="content-titles">
+	<h1>{{ titles }}</h1>
+	<select>
+	{{dump(title)}}
+		{% for title in titles %}
+			<option>{{ title }}</option>
+		{% endfor %}
+	</select>
+</div>

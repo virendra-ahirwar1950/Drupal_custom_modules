@@ -1,0 +1,31 @@
+<?php
+
+use Drupal\Core\Database\Database;
+
+/**
+ * Implements hook_install().
+ */
+function custom_form_install()
+{
+  $connection = Database::getConnection();
+  $schema['custom_form'] = [
+    'fields' => [
+      'id' => [
+        'type' => 'serial',
+        'not null' => TRUE,
+      ],
+      'name' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ],
+      'email' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ],
+    ],
+    'primary key' => ['id'],
+  ];
+  return $schema;
+}

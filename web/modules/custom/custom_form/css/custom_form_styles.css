@@ -1,0 +1,21 @@
+#confirmation-dialog {
+  background-color: aquamarine;
+  width: 400px;
+  height: 300px;
+}
+
+.confirmation-popup {
+  color: pink;
+  text-align: center;
+}
+
+.submit-text {
+  color: brown;
+}
+
+#form-wrapper {
+  background-color: aqua;
+  color: red;
+  border-radius: 24px;
+  padding: 20px;
+}

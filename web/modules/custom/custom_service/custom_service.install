@@ -1,0 +1,27 @@
+<?php
+function custom_service_schema() {
+    $schema['customform'] = array(
+        'description' => 'Schema for custom form data',
+        'fields' => array(
+            'id' => array(
+                'description' => 'The primary identifier for the record',
+                'type' => 'serial',
+                'not null' => TRUE,
+            ),
+            'mail' => array(
+                'description' => 'User email address.',
+                'type' => 'varchar',
+                'length' => 64,
+                'default' => '',
+            ),
+            'name' => array(
+                'description' => 'User Name.',
+                'type' => 'varchar',
+                'length' => 64,
+                'default' => '',
+            ),
+        ),
+        'primary key' => array('id'),
+    );
+    return $schema;
+}
